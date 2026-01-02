@@ -9,3 +9,6 @@ def signup_view(request):
 
 def verify_email_view(request):
     return render(request,'accounts/verify_email.html')
+
+def forgot_pass_view(request):
+    return render(request,'accounts/forgot_pass.html')

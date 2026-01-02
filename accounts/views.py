@@ -6,3 +6,6 @@ def login_view(request):
 
 def signup_view(request):
     return render(request,'accounts/signup.html')
+
+def verify_email_view(request):
+    return render(request,'accounts/verify_email.html')

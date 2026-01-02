@@ -21,7 +21,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'accounts'
+    'accounts',
+    'members',
 ]
 
 MIDDLEWARE = [
@@ -100,3 +101,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/members/list/'
+LOGOUT_REDIRECT_URL = '/login/'
+
+

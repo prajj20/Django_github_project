@@ -12,3 +12,5 @@ def verify_email_view(request):
 
 def forgot_pass_view(request):
     return render(request,'accounts/forgot_pass.html')
+def reset_pass_view(request):
+    return render(request,'accounts/reset_pass.html')
